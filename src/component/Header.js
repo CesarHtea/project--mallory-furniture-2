@@ -4,8 +4,8 @@ class Header extends Component {
   render() {
     return (
       <header className='header'>
+        <img className='header__logo' src={logoWhite} />
         <nav className='header__principal'>
-          <img className='header__logo' src={logoWhite} />
           <ul className='listNav'>
             <li>About</li>
             <li>Terms + Condition</li>

@@ -1,10 +1,11 @@
-import React, { Component } from 'react'; 
+import React, { Component } from 'react';
+import logoWhite from '../images/mf-logo-white.svg';
 class Header extends Component {
   render() {
     return (
       <header>
         <nav>
-          <img src='' />
+          <img src={logoWhite} />
           <ul>
             <li>About</li>
             <li>Terms + Condition</li>

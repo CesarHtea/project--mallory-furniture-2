@@ -16,13 +16,22 @@
 .header{
 	background-color: #222222;
 	display: flex;
+	padding: 10px 0;
 }
 
 .listNav{
 	list-style-type: none;
 	color: #ffffff;
+	margin-left: 20px;
 	display: flex;
+
 }
+
+.listNav li{
+	margin-right: 20px;
+	margin-top: 10px;
+
+} 
 
 
 

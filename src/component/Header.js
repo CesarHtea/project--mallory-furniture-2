@@ -13,7 +13,7 @@ class Header extends Component {
             <li>All</li>
           </ul>
         </nav>
-        <nav className='header__principal'>
+        <nav className='header__secondary'>
           <ul>
             <li>Seating</li>
             <li>Tables</li>

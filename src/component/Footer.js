@@ -27,9 +27,9 @@ class Footer extends Component {
           <section className='footer__section'>
             <h3 className='footer__title'>Social</h3>
             <ul className='footer__list'>
-              <li><i></i></li>
-              <li><i></i></li>
-              <li><i></i></li>
+              <li><i className='fa fa-instagram'></i></li>
+              <li><i className='fa fa-twitter'></i></li>
+              <li><i className='fa fa-pinterest'></i></li>
             </ul>
           </section>
         </div>  

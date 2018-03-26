@@ -18,6 +18,12 @@
 	display: flex;
 }
 
+.listNav{
+	list-style-type: none;
+	color: #ffffff;
+	display: flex;
+}
+
 
 
 

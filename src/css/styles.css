@@ -71,11 +71,30 @@
 *
 ***************************/
 
+.footer{
+	padding: 3% 0;
+}
+
 .footer__image{
 	width: 120px;
 	height: 120px;
-	background-color: red;
 	margin: 0 auto;
+	background-image: url(../images/mf-logo-black.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: relative;
+}
+
+.footer__image::before{
+	content: '';
+	width: 30px;
+	height: auto;
+	display: block;
+	border-bottom: solid 5px #999999;
+	position: absolute;
+	bottom:  20px;
+	left: 40px;
+
 }
 
 .footer__container{
@@ -97,8 +116,18 @@
 	line-height: 35px;
 }
 
-.footer__list:last-of-type{
-	display:  inline;
+.footer__section:last-of-type .footer__list li{
+	display: inline;
+	margin-right:0;
+	font-size: 20px;
+}
+
+.footer__section:last-of-type .footer__list li:last-of-type{
+	margin-right: 0%;
+}
+
+.footer__section:last-of-type .footer__title{
+	text-align: right;
 }
 
 .footer__title{

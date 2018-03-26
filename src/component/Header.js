@@ -4,7 +4,7 @@ class Header extends Component {
   render() {
     return (
       <header className='header'>
-        <nav className='header__principal'>
+        <nav className='header__principal listNav'>
           <img className='header__logo' src={logoWhite} />
           <ul>
             <li>About</li>
@@ -13,7 +13,7 @@ class Header extends Component {
             <li>All</li>
           </ul>
         </nav>
-        <nav className='header__secondary'>
+        <nav className='header__secondary listNav'>
           <ul>
             <li>Seating</li>
             <li>Tables</li>

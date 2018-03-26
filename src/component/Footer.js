@@ -16,7 +16,7 @@ class Footer extends Component {
               <li>Terms + Conditions</li>
             </ul>
           </section>
-          <section>
+          <section className='footer__section'>
             <h3 className='footer__title'>Categories</h3>
             <ul className='footer__list'>
               <li>Seating</li>
@@ -24,7 +24,7 @@ class Footer extends Component {
               <li>Misc</li>
             </ul>
           </section>
-          <section>
+          <section className='footer__section'>
             <h3 className='footer__title'>Social</h3>
             <ul className='footer__list'>
               <li><i></i></li>

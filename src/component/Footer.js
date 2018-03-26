@@ -4,6 +4,9 @@ class Footer extends Component {
   render() {
     return (
       <footer className='footer'>
+        <div className='footer__image'>
+          <img src=''/>
+        </div>
         <section className='footer__section'>
           <h3 className='footer__title'>Company</h3>
           <ul className='footer__list'>

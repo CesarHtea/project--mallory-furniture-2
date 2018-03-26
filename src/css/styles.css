@@ -6,3 +6,18 @@
   padding: 0;
 }
 
+
+/***************************
+*
+* Header.js
+*
+***************************/
+
+.header{
+	background-color: #222222;
+	display: flex;
+}
+
+
+
+

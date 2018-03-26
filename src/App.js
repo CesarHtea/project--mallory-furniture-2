@@ -4,6 +4,7 @@ import './css/styles.css';
 
 import Header from './component/Header'
 import Slide from './component/Slide'
+import Footer from './component/Footer'
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
       <div>
         <Header />
         <Slide />
+        <Footer />
       </div>
     );
   }

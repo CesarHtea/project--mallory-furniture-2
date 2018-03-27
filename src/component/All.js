@@ -5,7 +5,11 @@ import Card from './Card';
 class All extends Component {
   render() {
     return (
-    	<div>
+    	<div className='all'>
+    		<Card />
+    		<Card />
+    		<Card />
+    		<Card />
     		<Card />
     	</div>
     );

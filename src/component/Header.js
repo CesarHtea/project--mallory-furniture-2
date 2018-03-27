@@ -18,7 +18,7 @@ class Header extends Component {
               <li>Terms + Condition</li>
             </Link>  
             <li>|</li>
-            <Link to='/All' className='header_link'>
+            <Link to='/all' className='header_link'>
               <li>All</li>
             </Link>   
           </ul>

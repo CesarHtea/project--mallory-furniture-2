@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 import logoWhite from '../images/mf-logo-white.svg';
 class Header extends Component {
   render() {
     return (
       <header className='header'>
-        <img className='header__logo' src={logoWhite} />
+        <Link to='/' className=''>
+          <img className='header__logo' src={logoWhite} />
+        </Link>  
         <nav className='header__principal'>
           <ul className='listNav'>
             <li>About</li>

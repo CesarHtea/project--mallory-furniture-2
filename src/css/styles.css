@@ -155,3 +155,35 @@
 	font-size: 13px;
 	font-weight: bold;
 }
+
+/***************************
+*
+* Terms.js
+*
+***************************/
+
+.terms{
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+	padding: 2% 0;
+}
+
+.terms__title{
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	padding-bottom: 2%;
+}
+
+.terms__subTitle{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	padding-bottom: 2%;
+}
+
+.terms__text{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	padding-bottom: 2%;
+}

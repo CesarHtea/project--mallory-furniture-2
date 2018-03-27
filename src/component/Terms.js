@@ -13,7 +13,7 @@ class Terms extends Component {
 				You are responsible for maintaining the confidentiality of the login details and Your account. Artlimes reserves the right to reject Your subscription for any or no reason, in particular, due to User's breach of these Terms of Service.
 			</p>
 			<h2 className='terms__subTitle'>Privacy Policy</h2>
-			<p className='terms__subTitle'>
+			<p className='terms__text'>
 				User’s personal data handling and protection is governed under the terms hereof and the provisions of General Data Protection Regulation (Regulation EC/679/2016).
 				We don’t share your personal information with anyone except to comply with the law, develop our products, or protect our rights.
 				Mallory Furniture collects non-personally-identifying information of the sort that web browsers and servers typically make available, such as the browser type, language preference, referring site, and the date and time of each visitor request. Mallory Furniture's purpose in collecting non-personally identifying information is to better understand how Mallory Furniture's visitors use its website. From time to time, Mallory Furniture may release non-personally-identifying information in the aggregate, e.g., by publishing a report on trends in the usage of its website.

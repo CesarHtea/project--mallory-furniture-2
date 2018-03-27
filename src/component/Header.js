@@ -6,15 +6,15 @@ class Header extends Component {
   render() {
     return (
       <header className='header'>
-        <Link to='/' className=''>
+        <Link to='/' className='header_link'>
           <img className='header__logo' src={logoWhite} />
         </Link>  
         <nav className='header__principal'>
           <ul className='listNav'>
-            <Link to='/About' className=''>
+            <Link to='/About' className='header_link'>
               <li>About</li>
             </Link>
-            <Link to='/Terms' className=''>
+            <Link to='/Terms' className='header_link'>
               <li>Terms + Condition</li>
             </Link>  
             <li>|</li>

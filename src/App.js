@@ -15,6 +15,9 @@ class App extends Component {
       <div>
         <Header />
         <Slide />
+	        <Switch>
+	          <Route exact path='/' component={Home} />
+	        </Switch>
         <Footer />
       </div>
     );

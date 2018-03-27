@@ -11,7 +11,9 @@ class Header extends Component {
         </Link>  
         <nav className='header__principal'>
           <ul className='listNav'>
-            <li>About</li>
+            <Link to='/About' className=''>
+              <li>About</li>
+            </Link>
             <li>Terms + Condition</li>
             <li>|</li>
             <li>All</li>

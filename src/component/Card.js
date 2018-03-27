@@ -4,10 +4,10 @@ class Card extends Component {
     return (
       <div className='card'>
         <div className='card__container__img'>
-          <img className='card__img' src='https://mallory-furniture-static.now.sh/product-images/arm-chair-1.jpg'/>
-        </div>
-        <h5 className='card__title'>Handcrafted Brayton Coupe Grande Club Chairs</h5>
-        <p className='card__price'>$ 1800</p>
+          <img className='card__img' src={this.props.image}/>
+        </div>  
+        <h5 className='card__title'>{this.props.name}</h5>
+        <p className='card__price'>$ {this.props.price}</p>
       </div>
     );
   }

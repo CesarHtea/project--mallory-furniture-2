@@ -5,7 +5,6 @@ import logo from './logo.svg';
 import './css/styles.css';
 
 import Header from './component/Header'
-import Slide from './component/Slide'
 import Home from './component/Home'
 import About from './component/About'
 import Terms from './component/Terms'
@@ -16,7 +15,7 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <Slide />
+      
 	        <Switch>
 	          <Route exact path='/' component={Home} />
 	          <Route exact path='/about' component={About} />

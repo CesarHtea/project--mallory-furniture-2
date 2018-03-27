@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Slide from './Slide'
 
+import request  from 'superagent'
+
 
 class Home extends Component {
   render() {

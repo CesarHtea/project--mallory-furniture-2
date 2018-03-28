@@ -46,7 +46,7 @@ class All extends Component {
   	console.log(newListCount)
     return (
     	<div>
-    		<div className='box__container__all'>
+    		<div className='box__container__products'>
 	    		<div className='products__conatainer'>
 		    		<h1 className='products__title'>All Products</h1>
 		    		<p className='products__subtitle'>All available listing</p>

@@ -25,12 +25,24 @@ class Header extends Component {
         </nav>
         <nav className='header__secondary'>
           <ul className='listNav'>
-            <li>Seating</li>
-            <li>Tables</li>
-            <li>Desks</li>
-            <li>Storage</li>
-            <li>Bedroom</li>
-            <li>Misc</li>
+            <Link to={'/section/seating'} className='header_link'>
+              <li>Seating</li>
+            </Link>
+            <Link to={'/section/tables'} className='header_link'>   
+              <li>Tables</li>
+            </Link>
+            <Link to={'/section/desks'} className='header_link'>    
+              <li>Desks</li>
+            </Link>
+            <Link to={'/section/storage'} className='header_link'>    
+              <li>Storage</li>
+            </Link> 
+            <Link to={'/section/bedroom'} className='header_link'>   
+              <li>Bedroom</li>
+            </Link> 
+            <Link to={'/section/miscellaneous'} className='header_link'>   
+              <li>Misc</li>
+            </Link> 
             <li>|</li>
           </ul>   
         </nav>

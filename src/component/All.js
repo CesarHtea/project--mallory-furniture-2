@@ -26,11 +26,11 @@ class All extends Component {
 	  		})
 	}
 
- productsFilter = (item) => {
-  this.setState({
-      filter: item
-    });
-  }
+	productsFilter = (item) => {
+		this.setState({
+		 	filter: item
+		});
+	}
 	
 	products = (item) =>{
 	    if(item === "all") return this.state.dataAll
@@ -42,7 +42,6 @@ class All extends Component {
   render() {
   	const dataAlll = this.state.filter
   	const newList = this.products(dataAlll)
-  	console.log(newList)
     return (
     	<div>
 	    	<button onClick={ () => { this.productsFilter('all')  } }>All</button>

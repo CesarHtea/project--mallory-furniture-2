@@ -43,7 +43,6 @@ class All extends Component {
   	const dataAlll = this.state.filter
   	const newList = this.products(dataAlll)
   	const newListCount = newList.length
-  	console.log(newList)
     return (
     	<div>
     		<div className='box__container__products'>

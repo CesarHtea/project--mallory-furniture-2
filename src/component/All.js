@@ -43,7 +43,7 @@ class All extends Component {
   	const dataAlll = this.state.filter
   	const newList = this.products(dataAlll)
   	const newListCount = newList.length
-  	console.log(newListCount)
+  	console.log(newList)
     return (
     	<div>
     		<div className='box__container__products'>
@@ -59,7 +59,7 @@ class All extends Component {
 	    	</div>
 	    	<div className='all'>
 	    		{newList.map(function(p){
-						return <Card name={p.item}  price={p.price} image={p.imageLink} category={p.category}/>
+						return <Card name={p.item}  price={p.price} image={p.imageLink} category={p.category} idProduct={p._id}/>
 				})}
 	    	</div>
     	</div>

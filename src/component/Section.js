@@ -31,7 +31,7 @@ class Section extends Component {
 
 	createList = () => {
 		let category = this.props.match.params.cat
-		 console.log(category)
+		 //console.log(category)
 		if ( category !== '' ) {
 			return this.state.dataAll.filter( function (item) {return item.category === category} );
 		}
@@ -70,7 +70,7 @@ class Section extends Component {
 	    	<div className='all'>
 	    		
 	    		{newList.map(function(p){
-						return <Card name={p.item}  price={p.price} image={p.imageLink} category={p.category}/>
+						return <Card name={p.item}  price={p.price} image={p.imageLink} category={p.category} />
 				})}
 	    	</div>
     	</div>

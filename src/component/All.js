@@ -52,9 +52,9 @@ class All extends Component {
 		    		<p className='products__subtitle'>All available listing</p>
 	    		</div>
 	    		<div className='button__container'>
-			    	<button onClick={ () => { this.productsFilter('all')  } }  className='button'>All</button>
+			    	<button onClick={ () => { this.productsFilter('all')  } }  className='button active'>All items</button>
 			    	<button onClick={ () => { this.productsFilter(true)  } } className='button'>On SAle</button>
-			    	<h3 className='count'><span className='count__number'>{newListCount}</span> ites showing</h3>
+			    	<p className='count'><span className='count__number'>{newListCount}</span> ites showing</p>
 		    	</div>
 	    	</div>
 	    	<div className='all'>

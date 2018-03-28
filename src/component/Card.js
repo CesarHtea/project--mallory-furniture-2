@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 class Card extends Component {
   render() {
+    console.log(this.props.category)
     return (
       <div className='card'>
         <div className='card__container__img'>

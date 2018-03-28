@@ -51,7 +51,7 @@ class All extends Component {
 	    	<div className='all'>
 	    		
 	    		{newList.map(function(p){
-						return <Card name={p.item}  price={p.price} image={p.imageLink}/>
+						return <Card name={p.item}  price={p.price} image={p.imageLink} category={p.category}/>
 				})}
 	    	</div>
     	</div>

@@ -42,13 +42,20 @@ class All extends Component {
   render() {
   	const dataAlll = this.state.filter
   	const newList = this.products(dataAlll)
+  	const newListCount = newList.length
+  	console.log(newListCount)
     return (
     	<div>
-	    	<button onClick={ () => { this.productsFilter('all')  } }>All</button>
-	    	<button onClick={ () => { this.productsFilter(true)  } }>On SAle</button>
-	    	
+    		<div className='products__conatainer'>
+	    		<h1 className='products__title'>All Products</h1>
+	    		<p className='products__subtitle'>All available listing</p>
+    		</div>
+    		<div className='button__container'>
+		    	<button onClick={ () => { this.productsFilter('all')  } }  className='button'>All</button>
+		    	<button onClick={ () => { this.productsFilter(true)  } } className='button'>On SAle</button>
+		    	<h3 className='count'><span className='count__number'>{newListCount}</span> ites showing</h3>
+	    	</div>
 	    	<div className='all'>
-	    		
 	    		{newList.map(function(p){
 						return <Card name={p.item}  price={p.price} image={p.imageLink} category={p.category}/>
 				})}

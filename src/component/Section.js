@@ -54,23 +54,34 @@ class Section extends Component {
 
 
 
-  
+
 
   render() {
 
   	let newListt = this.createList()
   	const dataAlll = this.state.filter
   	const newList = this.products(dataAlll, newListt)
- 
+ 	const newListCount = newList.length
+ 	let title =  this.props.match.params.cat
     return (
     	<div>
-	    	<button onClick={ () => { this.productsFilter('all')  } }>All</button>
-	    	<button onClick={ () => { this.productsFilter(true)  } }>On SAle</button>
+    	<div className='box__container__products'>
+	    		<div className='products__conatainer'>
+		    		<h1 className='products__title'>{title}</h1>
+		    		<p className='products__subtitle'>All available listing</p>
+	    		</div>
+	    		<div className='button__container'>
+			    	<button onClick={ () => { this.productsFilter('all')  } }  className='button active'>All items</button>
+			    	<button onClick={ () => { this.productsFilter(true)  } } className='button'>On SAle</button>
+			    	<p className='count'><span className='count__number'>{newListCount}</span> ites showing</p>
+		    	</div>
+	    </div>		
+	    
 	    	
 	    	<div className='all'>
 	    		
 	    		{newList.map(function(p){
-						return <Card name={p.item}  price={p.price} image={p.imageLink} category={p.category} />
+						return <Card name={p.item}  price={p.price} image={p.imageLink} category={p.category} idProduct={p._id} />
 				})}
 	    	</div>
     	</div>

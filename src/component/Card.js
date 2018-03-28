@@ -6,7 +6,7 @@ class Card extends Component {
     //console.log(this.props.category)
     
     const url =  '/product/'+ this.props.idProduct
-    console.log(url)
+    console.log(this.props.name)
     return (
       <div className='card'>
         <Link to={url} className='header_link'>

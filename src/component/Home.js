@@ -53,7 +53,9 @@ class Home extends Component {
 						return <Card name={p.item}  price={p.price} image={p.imageLink} category={p.category} idProduct={p._id}/>
 				})}
 	    	</div>
-	    	<button className='button__all'><Link className='button__all__link' to='/all'>All Products</Link></button>
+	    	<div className='container__button'>
+	    		<Link className='button__all__link' to='/all'><button className='button__all'>All Products</button></Link>
+    		</div>
     	</div>
     );
   }

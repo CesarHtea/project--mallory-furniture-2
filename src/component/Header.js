@@ -6,46 +6,30 @@ class Header extends Component {
   render() {
     return (
       <header className='header'>
-        <Link to='/' className='header_link'>
-          <img className='header__logo' src={logoWhite} />
-        </Link>  
-        <nav className='header__principal'>
-          <ul className='listNav'>
-            <Link to='/About' className='header_link'>
-              <li>About</li>
-            </Link>
-            <Link to='/Terms' className='header_link'>
-              <li>Terms + Condition</li>
-            </Link>  
-            <li>|</li>
-            <Link to='/all' className='header_link'>
-              <li>All</li>
-            </Link>   
-          </ul>
-        </nav>
-        <nav className='header__secondary'>
-          <ul className='listNav'>
-            <Link to={'/section/seating'} className='header_link'>
-              <li>Seating</li>
-            </Link>
-            <Link to={'/section/tables'} className='header_link'>   
-              <li>Tables</li>
-            </Link>
-            <Link to={'/section/desks'} className='header_link'>    
-              <li>Desks</li>
-            </Link>
-            <Link to={'/section/storage'} className='header_link'>    
-              <li>Storage</li>
-            </Link> 
-            <Link to={'/section/bedroom'} className='header_link'>   
-              <li>Bedroom</li>
-            </Link> 
-            <Link to={'/section/miscellaneous'} className='header_link'>   
-              <li>Misc</li>
-            </Link> 
-            <li>|</li>
-          </ul>   
-        </nav>
+        <div className='header__container'>
+          <Link to='/' className='header_link'>
+            <img className='header__logo' src={logoWhite} />
+          </Link>  
+          <nav className='header__principal'>
+            <ul className='listNav'>
+              <li><Link to='/About' className='header_link'>About</Link></li>
+              <li><Link to='/Terms' className='header_link'>Terms + Condition</Link></li>  
+              <li>|</li>
+              <li><Link to='/all' className='header_link'>All</Link></li>
+            </ul>
+          </nav>
+          <nav className='header__secondary'>
+            <ul className='listNav'>
+              <li><Link to={'/section/seating'} className='header_link__blue'>Seating</Link></li> 
+              <li><Link to={'/section/tables'} className='header_link__blue'>Tables</Link></li>   
+              <li><Link to={'/section/desks'} className='header_link__blue'>Desks</Link></li>
+              <li><Link to={'/section/storage'} className='header_link__blue'>Storage</Link> </li>
+              <li><Link to={'/section/bedroom'} className='header_link__blue'>Bedroom</Link></li>
+              <li><Link to={'/section/miscellaneous'} className='header_link__blue'> Misc</Link></li>
+              <li>|</li>
+            </ul>   
+          </nav>
+        </div>  
       </header>
     );
   }

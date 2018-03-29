@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Slide from './Slide';
 import Card from './Card';
 
+import { Link } from 'react-router-dom';
+
 import request  from 'superagent'
 
 
@@ -51,6 +53,7 @@ class Home extends Component {
 						return <Card name={p.item}  price={p.price} image={p.imageLink} category={p.category} idProduct={p._id}/>
 				})}
 	    	</div>
+	    	<button className='button__all'><Link className='button__all__link' to='/all'>All Products</Link></button>
     	</div>
     );
   }

@@ -5,9 +5,11 @@ class SectionButton extends Component {
   render() {
     return (
     	<div>
-    		<div className='products__conatainer'>
-	    		<h1 className='products__title'>Featured Products</h1>
-	    		<p className='products__subtitle'>Check out some of our favorite listings</p>
+    		<div className='box__container__products'>
+    			<div className='products__conatainer'>
+		    		<h1 className='products__title'>Featured Products</h1>
+		    		<p className='products__subtitle'>Check out some of our favorite listings</p>
+		    	</div>	
 	    	</div>
 
 	    	<div className='container__button'>

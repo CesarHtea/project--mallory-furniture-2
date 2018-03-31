@@ -12,17 +12,17 @@ class Footer extends Component {
             <section className='footer__section'>
               <h3 className='footer__title'>Company</h3>
               <ul className='footer__list'>
-                <li><Link to={''} className='footer__list__link'>About</Link></li>
-                <li><Link to={''} className='footer__list__link'>Prees</Link></li>
-                <li><Link to={''} className='footer__list__link'>Terms + Conditions</Link></li>
+                <li><Link to={'/About'} className='footer__list__link'>About</Link></li>
+                <li><Link to={'/'} className='footer__list__link'>Prees</Link></li>
+                <li><Link to={'/Terms'} className='footer__list__link'>Terms + Conditions</Link></li>
               </ul>
             </section>
             <section className='footer__section'>
               <h3 className='footer__title'>Categories</h3>
               <ul className='footer__list'>
-                <li><Link to={''} className='footer__list__link'>Seating</Link></li>
-                <li><Link to={''} className='footer__list__link'>Tables</Link></li>
-                <li><Link to={''} className='footer__list__link'>Misc</Link></li>
+                <li><Link to={'/section/seating'} className='footer__list__link'>Seating</Link></li>
+                <li><Link to={'/section/tables'} className='footer__list__link'>Tables</Link></li>
+                <li><Link to={'/section/miscellaneous'} className='footer__list__link'>Misc</Link></li>
               </ul>
             </section>
           </div> 

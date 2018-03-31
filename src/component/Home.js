@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Slide from './Slide';
 import Card from './Card';
+import SectionButton from './SectionButton';
 
 import { Link } from 'react-router-dom';
 
@@ -56,6 +57,8 @@ class Home extends Component {
 	    	<div className='container__button'>
 	    		<Link className='button__all__link' to='/all'><button className='button__all'>All Products</button></Link>
     		</div>
+    		<SectionButton />
+
     	</div>
     );
   }

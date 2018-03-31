@@ -415,13 +415,6 @@
 *
 ***************************/
 
-.button__all{
-	width: 170px;
-	height: 50px;
-	background-color: rgba(255, 255, 255, .0);
-	border: solid 2px #f44336;
-	
-}
 
 .button__all__link{
 	text-decoration: none;
@@ -434,14 +427,41 @@
 	height: 50px;
 	background-color: rgba(255, 255, 255, .0);
 	border: solid 2px #f44336;
-	color:  #f44336;	
+	color:  #f44336;
+	cursor: pointer;	
 }
 
 .container__button{
-	width: 98%;
+	width: 80%;
 	height: auto;
 	margin: 0 auto;
 	margin-top: 3%;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
+}
+
+
+
+
+.button__section__link{
+	text-decoration: none;
+	color:  #2196f3;
+	margin-right:5%;
+
+
+}
+
+.button__section__link:last-of-type{
+	margin-right:0%;
+}
+
+.button__section{
+	width: 170px;
+	height: 50px;
+	background-color: rgba(255, 255, 255, .0);
+	border: solid 2px #2196f3;
+	color:  #2196f3;
+	cursor: pointer;
+	
 }

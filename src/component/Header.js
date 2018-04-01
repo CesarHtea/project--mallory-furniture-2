@@ -21,13 +21,12 @@ class Header extends Component {
           </nav>
           <nav className='header__secondary'>
             <ul className='listNav'>
-              <li><NavLink to="/section/seating" activeStyle={{ color:'red' }}>About</NavLink></li>
-              <li><Link to={'/section/seating'  } className='header_link__blue'>Seating</Link></li> 
-              <li><Link to={'/section/tables'} className='header_link__blue' activeStyle = {{color :  ' red ' }}>Tables</Link></li>   
-              <li><Link to={'/section/desks'} className='header_link__blue'>Desks</Link></li>
-              <li><Link to={'/section/storage'} className='header_link__blue'>Storage</Link> </li>
-              <li><Link to={'/section/bedroom'} className='header_link__blue'>Bedroom</Link></li>
-              <li><Link to={'/section/miscellaneous'} className='header_link__blue'> Misc</Link></li>
+              <li><NavLink to={'/section/seating'  } className='header_link__blue' activeStyle={{ color: '#ffc107', border:'none' }} >Seating</NavLink></li> 
+              <li><NavLink to={'/section/tables'} className='header_link__blue'  activeStyle={{ color: '#ffc107', border:'none' }}> Tables</NavLink></li>   
+              <li><NavLink to={'/section/desks'} className='header_link__blue' activeStyle={{ color: '#ffc107', border:'none' }}>Desks</NavLink></li>
+              <li><NavLink to={'/section/storage'} className='header_link__blue' activeStyle={{ color: '#ffc107', border:'none' }}>Storage</NavLink> </li>
+              <li><NavLink to={'/section/bedroom'} className='header_link__blue'activeStyle={{ color: '#ffc107', border:'none' }} >Bedroom</NavLink></li>
+              <li><NavLink to={'/section/miscellaneous'} className='header_link__blue' activeStyle={{ color: '#ffc107', border:'none' }}> Misc</NavLink></li>
               <li>|</li>
             </ul>   
           </nav>
@@ -35,6 +34,7 @@ class Header extends Component {
       </header>
     );
   }
+  
 }
 
 export default Header;

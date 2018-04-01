@@ -74,13 +74,14 @@ class Section extends Component {
   	const newList = this.products(dataAlll, newListt)
  	const newListCount = newList.length
  	let title = this.MaysPrimera(this.props.match.params.cat)
+ 	
  	let styles = this.rojo(this.state.filter) ? 'active' : '';
  	let stylesB = this.gris(this.state.filter) ? 'active' : '';
 	console.log(styles)
 	console.log(stylesB)
     return (
     	<div>
-    	<SlideProducts itemImg={title} />
+    	<SlideProducts itemImg={this.props.match.params.cat} />
     	<div className='box__container__products'>
 	    		<div className='products__conatainer'>
 		    		<h1 className='products__title'>{title}</h1>

@@ -11,13 +11,14 @@ slide = e => {
     bedroom: 'https://raw.githubusercontent.com/DamianAllende/project--mallory-furniture/master/src/images/category-bedroom.png',
     miscellaneous: 'https://raw.githubusercontent.com/DamianAllende/project--mallory-furniture/master/src/images/category-miscellaneous.png'
   }
-  console.log(e)
-  console.log('------')
+  
   return imageSlide[e]
 }
 
+
+
   render() {
-      
+      console.log(this.props.itemImg)
     
     
     return (

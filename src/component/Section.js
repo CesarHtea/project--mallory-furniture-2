@@ -53,7 +53,9 @@ class Section extends Component {
   	}
 
 
-
+  	 MaysPrimera = (string) => {
+  		return string.charAt(0).toUpperCase() + string.slice(1);
+	}
 
 
 
@@ -63,7 +65,7 @@ class Section extends Component {
   	const dataAlll = this.state.filter
   	const newList = this.products(dataAlll, newListt)
  	const newListCount = newList.length
- 	let title =  this.props.match.params.cat
+ 	let title = this.MaysPrimera(this.props.match.params.cat)
     return (
     	<div>
     	<SlideProducts itemImg={title} />
@@ -73,7 +75,7 @@ class Section extends Component {
 		    		<p className='products__subtitle'>All available listing</p>
 	    		</div>
 	    		<div className='button__container'>
-			    	<button onClick={ () => { this.productsFilter('all')  } }  className='button active'>All items</button>
+			    	<button onClick={ () => { this.productsFilter('all')  } }  className='button'>All items</button>
 			    	<button onClick={ () => { this.productsFilter(true)  } } className='button'>On SAle</button>
 			    	<p className='count'><span className='count__number'>{newListCount}</span> ites showing</p>
 		    	</div>

@@ -336,7 +336,7 @@
 }
 
 .button{
-
+	cursor: pointer;
 	border: solid 1px #999999 ;
 	background-color: rgba(255,255,255,0.0);
 	padding: 8px;
@@ -349,9 +349,9 @@
 }
 
 .active{
-
 	border: solid 1px #f44336 ;
-	color:#f44336; 
+	color:#f44336;
+	outline:none;
 	
 }
 

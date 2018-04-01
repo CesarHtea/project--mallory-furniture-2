@@ -57,6 +57,14 @@ class Section extends Component {
   		return string.charAt(0).toUpperCase() + string.slice(1);
 	}
 
+	rojo = (item) => {
+		if (item === 'all') return true	
+	}
+
+	gris = (item) => {
+		if (item === true) return true	
+	}
+
 
 
   render() {
@@ -66,6 +74,10 @@ class Section extends Component {
   	const newList = this.products(dataAlll, newListt)
  	const newListCount = newList.length
  	let title = this.MaysPrimera(this.props.match.params.cat)
+ 	let styles = this.rojo(this.state.filter) ? 'active' : '';
+ 	let stylesB = this.gris(this.state.filter) ? 'active' : '';
+	console.log(styles)
+	console.log(stylesB)
     return (
     	<div>
     	<SlideProducts itemImg={title} />
@@ -75,8 +87,8 @@ class Section extends Component {
 		    		<p className='products__subtitle'>All available listing</p>
 	    		</div>
 	    		<div className='button__container'>
-			    	<button onClick={ () => { this.productsFilter('all')  } }  className='button'>All items</button>
-			    	<button onClick={ () => { this.productsFilter(true)  } } className='button'>On SAle</button>
+			    	<button onClick={ () => { this.productsFilter('all')  } }  className={`button ${styles}`}>All items</button>
+			    	<button onClick={ () => { this.productsFilter(true)  } } className={`button ${stylesB}`}>On SAle</button>
 			    	<p className='count'><span className='count__number'>{newListCount}</span> ites showing</p>
 		    	</div>
 	    </div>		

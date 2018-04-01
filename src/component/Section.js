@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Card from './Card';
+import SlideProducts from './SlideProducts';
 
 import request  from 'superagent'
 
@@ -65,6 +66,7 @@ class Section extends Component {
  	let title =  this.props.match.params.cat
     return (
     	<div>
+    	<SlideProducts itemImg={title} />
     	<div className='box__container__products'>
 	    		<div className='products__conatainer'>
 		    		<h1 className='products__title'>{title}</h1>

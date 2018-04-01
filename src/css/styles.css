@@ -512,3 +512,20 @@
 	cursor: pointer;
 	
 }
+
+
+/***************************
+*
+* Slideproducts.js
+*
+***************************/
+.container__slide{
+	width: 98%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.container__slide__img{
+	width: 100%;
+	height: auto;
+}

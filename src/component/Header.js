@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'
 
 import logoWhite from '../images/mf-logo-white.svg';
 class Header extends Component {
@@ -20,8 +21,9 @@ class Header extends Component {
           </nav>
           <nav className='header__secondary'>
             <ul className='listNav'>
-              <li><Link to={'/section/seating'} className='header_link__blue'>Seating</Link></li> 
-              <li><Link to={'/section/tables'} className='header_link__blue'>Tables</Link></li>   
+              <li><NavLink to="/section/seating" activeStyle={{ color:'red' }}>About</NavLink></li>
+              <li><Link to={'/section/seating'  } className='header_link__blue'>Seating</Link></li> 
+              <li><Link to={'/section/tables'} className='header_link__blue' activeStyle = {{color :  ' red ' }}>Tables</Link></li>   
               <li><Link to={'/section/desks'} className='header_link__blue'>Desks</Link></li>
               <li><Link to={'/section/storage'} className='header_link__blue'>Storage</Link> </li>
               <li><Link to={'/section/bedroom'} className='header_link__blue'>Bedroom</Link></li>

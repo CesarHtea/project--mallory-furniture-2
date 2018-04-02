@@ -51,6 +51,13 @@
 	color: #ffffff;
 }
 
+
+.header__third{
+	color: #2196f3;
+} 
+
+
+
 .header_link{
 	text-decoration: none;
 	color: #ffffff;
@@ -276,9 +283,10 @@
 	width: 33%;
 	height: auto;
 	border: solid 1px #999999;
-	/*-webkit-box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.4);
-	-moz-box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.4);
-	box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.4);*/
+
+	-webkit-box-shadow: 1px 1px 1px 1px rgba(222,222,222,1);
+-moz-box-shadow: 1px 1px 1px 1px rgba(222,222,222,1);
+box-shadow: 1px 1px 1px 1px rgba(222,222,222,1);
 	margin: 5px 0 0 0 ;
 }
 

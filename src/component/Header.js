@@ -30,6 +30,11 @@ class Header extends Component {
               <li>|</li>
             </ul>   
           </nav>
+           <nav className='header__third'>
+            <ul className='listNav'>
+            <li><i class="fa fa-shopping-cart"></i></li>
+            </ul>   
+          </nav>
         </div>  
       </header>
     );
